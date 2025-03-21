@@ -31,7 +31,7 @@ var lists = [
                         <div class="icon">
                             <i class="fa-solid fa-trash" onclick="delite(${num})" style="background-color: red; color: white;"></i>           
                             <i class="fa-solid fa-check" style="background-color: greenyellow; color: white;"></i>
-                            <i class="fa-solid fa-pen" style="background-color: rgb(47, 127, 255); color: white;"></i>
+                            <i class="fa-solid fa-pen" onclick='update(${num})' style="background-color: rgb(47, 127, 255); color: white;"></i>
                         </div>
                     </div>`
                     num++
@@ -66,7 +66,20 @@ function delite(num){
     
     
  }
+ function update(num){
+    let newname = prompt('change name ',lists[num].name)
+    let list = lists[num]
+    list.name = newname
+    let now = new Date();
+    let day = now.getDate();  
+    let month = now.getMonth() + 1;  
+    let year = now.getFullYear();  
+    let date = day +"/"+  month  +"/"+year
+    list.time = day +"/"+  month  +"/"+year      
+     turnlist()
+
  
+ }
  
 
  
