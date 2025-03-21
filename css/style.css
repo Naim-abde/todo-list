@@ -16,6 +16,7 @@ section#container{
     min-height: 400px;
     margin: auto;
     margin-top: 70px;
+
     
 
 
@@ -43,6 +44,7 @@ div#cards{
     width: 97%;
    margin: auto;
    margin-top: 12px;
+   
       
 
 }
@@ -54,6 +56,10 @@ div.card{
     display: flex;
     justify-content: space-between;
     align-items: center;
+ }
+ div.card:hover{
+    box-shadow: #ffffffce 0px 5px 15px;
+
  }
  div.icon i{
     margin-left: 40px;
