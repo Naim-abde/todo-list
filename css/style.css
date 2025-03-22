@@ -70,3 +70,6 @@ div.card{
     background-position: center;
 
  }
+div.done{
+    background-color: rgb(0, 255, 170);
+}

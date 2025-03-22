@@ -30,7 +30,7 @@ var lists = [
                         </div>
                         <div class="icon">
                             <i class="fa-solid fa-trash" onclick="delite(${num})" style="background-color: red; color: white;"></i>           
-                            <i class="fa-solid fa-check" style="background-color: greenyellow; color: white;"></i>
+                            <i class="fa-solid fa-check" onclick="done(${num})" style="background-color: greenyellow; color: white;"></i>
                             <i class="fa-solid fa-pen" onclick='update(${num})' style="background-color: rgb(47, 127, 255); color: white;"></i>
                         </div>
                     </div>`
@@ -80,7 +80,14 @@ function delite(num){
 
  
  }
+ function done(num){
+    
+    if(lists[num].done)
  
+ }
+ 
+
+
 
  
   
